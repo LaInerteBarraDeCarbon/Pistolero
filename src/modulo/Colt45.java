@@ -2,15 +2,14 @@ package modulo;
 
 public class Colt45 extends Arma {
 
-	public Colt45(){
-		this.daño = 2;
-		this.tiros = 6;
-		this.distancia = 10;
+	public Colt45() {
+		super.daño = 2;
+		super.tiros = 6;
+		super.distancia = 10;
 	}
 
 	public void Recarga() {
-		if(this.tiros == 0)
-			this.tiros = 6;	
+		if (super.tiros == 0)
+			super.tiros = 6;
 	}
-
 }

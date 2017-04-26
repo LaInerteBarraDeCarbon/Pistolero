@@ -1,17 +1,17 @@
 package modulo;
 
-public class Alguacil extends Personaje {
+public class Renegado extends Personaje {
 
 	/**
-	 * Crea un personaje Alguacil. <br>
+	 * Crea un personaje renegado. <br>
 	 * 
 	 * @param posicion
 	 * @param arma
 	 */
-	public Alguacil(int posicion, Arma arma) {
+	public Renegado(int posicion, Arma arma) {
 		super(posicion, arma);
-		super.setNombre("Alguacil");
-		super.setSalud(6);
+		setNombre("Renegado");
+		setSalud(8);
 	}
 
 	@Override

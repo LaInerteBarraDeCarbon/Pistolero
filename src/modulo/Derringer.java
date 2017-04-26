@@ -1,39 +1,28 @@
 package modulo;
 
-public class Derringer extends Arma{
-	
+public class Derringer extends Arma {
+
+	/**
+	 * Cantidad de disparos hasta que el arma se destruya. <br>
+	 */
 	int disparos;
-	
-	public Derringer(){
-		this.daño = 1;
-		this.distancia = 1.5;
-		this.tiros = 2;
+
+	public Derringer() {
+		super.daño = 1;
+		super.distancia = 1.5;
+		super.tiros = 2;
 		this.disparos = 8;
 	}
-	
-	public boolean durabilidad(){
-		if(this.disparos > 0)
-			return true;
-		else
-			return false;
-	}
-	
 
 	public void Recarga() {
-		if(this.tiros == 0)
-			this.tiros = 2;		
+		if (super.tiros == 0)
+			super.tiros = 2;
 	}
 
-	public int getDisparos() {
-		return disparos;
+	@Override
+	public Boolean unTiroMenos() {
+		super.tiros--;
+		this.disparos--;
+		return (this.disparos == 0);
 	}
-
-	public void setDisparos(int disparos) {
-		this.disparos = disparos;
-	}
-	
-	
-
-	
-	
 }
