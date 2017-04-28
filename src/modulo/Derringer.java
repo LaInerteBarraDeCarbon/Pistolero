@@ -5,16 +5,16 @@ public class Derringer extends Arma {
 	/**
 	 * Cantidad de disparos hasta que el arma se destruya. <br>
 	 */
-	int disparos;
+	int durabilidad;
 
 	public Derringer() {
 		super.daño = 1;
 		super.distancia = 1.5;
 		super.tiros = 2;
-		this.disparos = 8;
+		this.durabilidad = 8;
 	}
 
-	public void Recarga() {
+	public void recarga() {
 		if (super.tiros == 0)
 			super.tiros = 2;
 	}
@@ -22,7 +22,7 @@ public class Derringer extends Arma {
 	@Override
 	public Boolean unTiroMenos() {
 		super.tiros--;
-		this.disparos--;
-		return (this.disparos == 0);
+		this.durabilidad--;
+		return (this.durabilidad == 0);
 	}
 }

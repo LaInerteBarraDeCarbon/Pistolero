@@ -91,7 +91,7 @@ public abstract class Personaje {
 	 * 
 	 * @return true si sigue vivo, false si esta muerto. <br>
 	 */
-	public boolean isVivo() {
+	public boolean estaVivo() {
 		return this.vivo;
 	}
 
@@ -104,7 +104,7 @@ public abstract class Personaje {
 	 * 
 	 * @return true si tiene arma, false de lo contrario. <br>
 	 */
-	public boolean isTieneArma() {
+	public boolean getTieneArma() {
 		return this.tieneArma;
 	}
 
@@ -116,14 +116,19 @@ public abstract class Personaje {
 	public double getDistanciaArma() {
 		return this.arma.getDistancia();
 	}
-
+	
 	/**
-	 * Establece si el personaje posee arma o no. <br>
+	 * Asigna un arma al personaje en caso de que no posea una. <br>
 	 * 
-	 * @param tieneArma
+	 * @param arma
+	 * @return true si asignó el arma, false si ya tenía una.
 	 */
-	public void setTieneArma(boolean tieneArma) {
-		this.tieneArma = tieneArma;
+	public boolean asignaArma(Arma arma) {
+		if(this.tieneArma) return false;
+		
+		this.arma = arma;
+		this.tieneArma = true;
+		return true;
 	}
 
 	/**

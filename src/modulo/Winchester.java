@@ -8,12 +8,9 @@ public class Winchester extends Arma {
 		this.distancia = 4;
 	}
 
-	public void Recarga() {
-		boolean flag = false;
-
+	public void recarga() {
 		if (this.tiros == 0) {
 			this.tiros = 2;
-			flag = true;
 		}
 	}
 }

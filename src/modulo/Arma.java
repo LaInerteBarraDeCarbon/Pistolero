@@ -14,7 +14,7 @@ public abstract class Arma {
 	/**
 	 * Realiza la recarga del arma. <br>
 	 */
-	public abstract void Recarga();
+	public abstract void recarga();
 
 	/**
 	 * Devuelve el nombre del arma. <br>
@@ -79,7 +79,7 @@ public abstract class Arma {
 	}
 
 	/**
-	 * Descuenta un tiro del arma y reduce su durabilidad de poseer. <br>
+	 * Descuenta un tiro del arma y reduce su durabilidad, si la tiene. <br>
 	 * 
 	 * @return true si se destruye, false de lo contrario. <br>
 	 */

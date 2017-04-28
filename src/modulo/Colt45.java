@@ -8,7 +8,7 @@ public class Colt45 extends Arma {
 		super.distancia = 10;
 	}
 
-	public void Recarga() {
+	public void recarga() {
 		if (super.tiros == 0)
 			super.tiros = 6;
 	}
