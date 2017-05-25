@@ -2,14 +2,14 @@ package modulo;
 
 /**
  * La clase Arma crea armas con su nombre, su cantidad de tiros, la distancia de
- * rango del arma y el daño que produce. <br>
+ * rango del arma y el daï¿½o que produce. <br>
  */
 public abstract class Arma {
 
 	String nombre;
 	int tiros;
 	double distancia;
-	int daño;
+	int daÃ±o;
 
 	/**
 	 * Realiza la recarga del arma. <br>
@@ -61,21 +61,21 @@ public abstract class Arma {
 	}
 
 	/**
-	 * Devuelve el daño del arma. <br>
+	 * Devuelve el daï¿½o del arma. <br>
 	 * 
-	 * @return Daño. <br>
+	 * @return Daï¿½o. <br>
 	 */
-	public int getDaño() {
-		return daño;
+	public int getDaÃ±o() {
+		return daÃ±o;
 	}
 
 	/**
-	 * Establece el daño del arma. <br>
+	 * Establece el daï¿½o del arma. <br>
 	 * 
-	 * @param daño
+	 * @param daï¿½o
 	 */
-	public void setDaño(int daño) {
-		this.daño = daño;
+	public void setDaÃ±o(int daÃ±o) {
+		this.daÃ±o = daÃ±o;
 	}
 
 	/**

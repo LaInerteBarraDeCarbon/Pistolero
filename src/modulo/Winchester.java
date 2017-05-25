@@ -3,7 +3,7 @@ package modulo;
 public class Winchester extends Arma {
 
 	public Winchester() {
-		this.daño = 3;
+		this.daÃ±o = 3;
 		this.tiros = 2;
 		this.distancia = 4;
 	}

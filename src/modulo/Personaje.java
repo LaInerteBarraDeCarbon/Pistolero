@@ -23,7 +23,7 @@ public abstract class Personaje {
 	 */
 	boolean tieneArma;
 	/**
-	 * Posición del personaje. <br>
+	 * Posiciï¿½n del personaje. <br>
 	 */
 	double posicion;
 	/**
@@ -32,7 +32,7 @@ public abstract class Personaje {
 	Arma arma;
 
 	/**
-	 * Crea un personaje con su posición y su arma. <br>
+	 * Crea un personaje con su posiciï¿½n y su arma. <br>
 	 * 
 	 * @param posicion
 	 * @param arma
@@ -44,7 +44,7 @@ public abstract class Personaje {
 	}
 
 	/**
-	 * Crea un personaje con su posición pero sin arma. <br>
+	 * Crea un personaje con su posiciï¿½n pero sin arma. <br>
 	 * 
 	 * @param posicion
 	 */
@@ -121,7 +121,7 @@ public abstract class Personaje {
 	 * Asigna un arma al personaje en caso de que no posea una. <br>
 	 * 
 	 * @param arma
-	 * @return true si asignó el arma, false si ya tenía una.
+	 * @return true si asignï¿½ el arma, false si ya tenï¿½a una.
 	 */
 	public boolean asignaArma(Arma arma) {
 		if(this.tieneArma) return false;
@@ -144,9 +144,9 @@ public abstract class Personaje {
 			if (this.nombre.equals("Sherif") && this.arma.getNombre().equals("Winchester"))
 				personaje.salud -= 5;
 			else
-				personaje.salud -= this.arma.daño;
+				personaje.salud -= this.arma.daÃ±o;
 			if (this.arma.unTiroMenos().equals(true)) {
-				System.out.println("El arma se destruyó");
+				System.out.println("El arma se destruyï¿½");
 				this.tieneArma = false;
 			}
 		}

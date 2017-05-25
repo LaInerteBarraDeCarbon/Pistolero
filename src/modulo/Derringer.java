@@ -8,7 +8,7 @@ public class Derringer extends Arma {
 	int durabilidad;
 
 	public Derringer() {
-		super.daño = 1;
+		super.daÃ±o = 1;
 		super.distancia = 1.5;
 		super.tiros = 2;
 		this.durabilidad = 8;
